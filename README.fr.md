@@ -19,7 +19,7 @@ Pincez avec deux doigts sur le trackpad pour agrandir ou réduire le texte, comm
 3. Ouvrez TerminalPinch. La première fois, macOS peut dire que l'app vient d'un développeur non identifié (elle n'est pas notariée par Apple, ce qui coûte 99 $/an) :
    - **macOS 13–14 :** clic droit sur l'app → **Ouvrir** → **Ouvrir**.
    - **macOS 15 et plus :** essayez de l'ouvrir une fois, puis allez dans **Réglages Système → Confidentialité et sécurité** et cliquez sur **Ouvrir quand même**.
-4. Suivez la courte configuration : elle demande les deux autorisations nécessaires et vous laisse choisir comment régler la vitesse.
+4. Suivez la courte configuration : elle demande la seule autorisation nécessaire et vous laisse choisir comment régler la vitesse.
 
 Nécessite macOS 13 Ventura ou plus récent, sur Apple Silicon ou Intel.
 
@@ -27,8 +27,7 @@ Nécessite macOS 13 Ventura ou plus récent, sur Apple Silicon ou Intel.
 
 | Autorisation | Pourquoi |
 |---|---|
-| Surveillance de l'entrée | pour détecter le pincement |
-| Accessibilité | pour changer la taille du texte dans iTerm2, Ghostty, etc. et remettre la fenêtre à sa taille |
+| Accessibilité | pour détecter le pincement, changer la taille du texte dans iTerm2, Ghostty, etc. et remettre la fenêtre à sa taille |
 | Automatisation → Terminal | Terminal d'Apple uniquement : pour changer directement la taille de police (demandé au premier pincement) |
 
 TerminalPinch n'écoute que les gestes de pincement. Il ne lit jamais ce que vous tapez et n'a aucun accès au réseau.

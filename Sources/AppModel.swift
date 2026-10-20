@@ -7,7 +7,6 @@ final class AppModel: ObservableObject {
     @Published var upSpeed: Double { didSet { Settings.upStep = Settings.step(fromSpeed: upSpeed) } }
     @Published var downSpeed: Double { didSet { Settings.downStep = Settings.step(fromSpeed: downSpeed) } }
 
-    @Published var inputGranted = false
     @Published var axGranted = false
     @Published var monitorRunning = false
 
@@ -59,6 +58,7 @@ final class AppModel: ObservableObject {
         downSpeed = Settings.speed(fromStep: down)
     }
 
+    // L'Accessibilité suffit à écouter le pincement (pas besoin de « Surveillance de l'entrée »).
     // Vérifie les autorisations régulièrement et démarre l'écoute dès que c'est possible.
     func startPolling() {
         refresh()
@@ -66,24 +66,16 @@ final class AppModel: ObservableObject {
     }
 
     func refresh() {
-        inputGranted = CGPreflightListenEventAccess()
         axGranted = AXIsProcessTrusted()
-        if !monitorRunning, inputGranted || axGranted {
+        if !monitorRunning, axGranted {
             monitorRunning = GestureMonitor.shared.start()
         }
     }
 
-    func requestInput() {
-        if !CGRequestListenEventAccess() { openPrivacy("Privacy_ListenEvent") }
-    }
-
     func requestAccessibility() {
+        // Affiche la fenêtre de macOS et ajoute l'app à la liste des Réglages.
         let opts = [kAXTrustedCheckOptionPrompt.takeUnretainedValue() as String: true] as CFDictionary
-        if !AXIsProcessTrustedWithOptions(opts) {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak self] in
-                if self?.axGranted == false { self?.openPrivacy("Privacy_Accessibility") }
-            }
-        }
+        _ = AXIsProcessTrustedWithOptions(opts)
     }
 
     func openPrivacy(_ anchor: String) {

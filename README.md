@@ -19,7 +19,7 @@ Pinch with two fingers on your trackpad to make the text bigger or smaller, just
 3. Open TerminalPinch. The first time, macOS may say the app is from an unidentified developer (the app isn't notarized by Apple — that costs $99/year):
    - **macOS 13–14:** right-click the app → **Open** → **Open**.
    - **macOS 15+:** try to open it once, then go to **System Settings → Privacy & Security** and click **Open Anyway**.
-4. Follow the short setup: it asks for the two permissions it needs and lets you choose how to adjust the speed.
+4. Follow the short setup: it asks for the one permission it needs and lets you choose how to adjust the speed.
 
 Requires macOS 13 Ventura or later, on Apple Silicon or Intel.
 
@@ -27,8 +27,7 @@ Requires macOS 13 Ventura or later, on Apple Silicon or Intel.
 
 | Permission | Why |
 |---|---|
-| Input Monitoring | to detect the pinch gesture |
-| Accessibility | to change the text size in iTerm2, Ghostty, etc. and put the window back to its size |
+| Accessibility | to detect the pinch, change the text size in iTerm2, Ghostty, etc. and put the window back to its size |
 | Automation → Terminal | Apple's Terminal only: to change the font size directly (asked the first time you pinch) |
 
 TerminalPinch only listens to pinch gestures. It never reads what you type, and it has no network access.

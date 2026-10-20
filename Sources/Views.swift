@@ -65,14 +65,11 @@ struct PermissionsSection: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
-            PermissionRow(title: L.t("perm.input.title"), detail: L.t("perm.input.desc"),
-                          section: L.t("perm.input.title"), granted: m.inputGranted,
-                          request: m.requestInput, open: { m.openPrivacy("Privacy_ListenEvent") })
             PermissionRow(title: L.t("perm.ax.title"), detail: L.t("perm.ax.desc"),
                           section: L.t("perm.ax.title"), granted: m.axGranted,
                           request: m.requestAccessibility, open: { m.openPrivacy("Privacy_Accessibility") })
             Text(L.t("perm.automation")).font(.caption).foregroundStyle(.secondary)
-            if (m.inputGranted || m.axGranted) && !m.monitorRunning {
+            if m.axGranted && !m.monitorRunning {
                 HStack {
                     Text(L.t("perm.restart")).font(.caption)
                     Button(L.t("perm.relaunch"), action: m.relaunch).font(.caption)
@@ -163,13 +160,13 @@ struct OnboardingView: View {
             HStack {
                 if step > 0 { Button(L.t("back")) { step -= 1 } }
                 Spacer()
-                if step == 1 && !(m.inputGranted && m.axGranted) {
+                if step == 1 && !m.axGranted {
                     Button(L.t("later")) { step += 1 }
                 }
                 if step < 3 {
                     Button(L.t("continue")) { step += 1 }
                         .keyboardShortcut(.defaultAction)
-                        .disabled(step == 1 && !(m.inputGranted && m.axGranted))
+                        .disabled(step == 1 && !m.axGranted)
                 } else {
                     Button(L.t("done"), action: finish).keyboardShortcut(.defaultAction)
                 }
@@ -196,6 +193,9 @@ struct OnboardingView: View {
             Text(L.t("finish.body"))
             Toggle(L.t("finish.login"), isOn: $m.launchAtLogin)
             Text(L.t("finish.reopen")).font(.callout).foregroundStyle(.secondary)
+            if let url = URL(string: Settings.donationURL), !Settings.donationURL.isEmpty {
+                Link(L.t("menu.donate"), destination: url).font(.callout)
+            }
         }
     }
 
