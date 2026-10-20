@@ -55,7 +55,7 @@ If a terminal already handles pinch-to-zoom on its own, turn it off in **Setting
 ## Build from source
 
 ```sh
-git clone https://github.com/<you>/TerminalPinch.git
+git clone https://github.com/Throover/TerminalPinch.git
 cd TerminalPinch
 ./scripts/build.sh      # → build/TerminalPinch.app and build/TerminalPinch-x.y.z.dmg
 ```

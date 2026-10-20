@@ -48,7 +48,7 @@ Si vous utilisez [Claude Code](https://claude.com/claude-code), la configuration
 ## Compiler soi-même
 
 ```sh
-git clone https://github.com/<vous>/TerminalPinch.git
+git clone https://github.com/Throover/TerminalPinch.git
 cd TerminalPinch
 ./scripts/build.sh      # → build/TerminalPinch.app et build/TerminalPinch-x.y.z.dmg
 ```
