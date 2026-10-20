@@ -68,7 +68,7 @@ struct PermissionsSection: View {
             PermissionRow(title: L.t("perm.ax.title"), detail: L.t("perm.ax.desc"),
                           section: L.t("perm.ax.title"), granted: m.axGranted,
                           request: m.requestAccessibility, open: { m.openPrivacy("Privacy_Accessibility") })
-            Text(L.t("perm.automation")).font(.caption).foregroundStyle(.secondary)
+            Label(L.t("perm.automation"), systemImage: "info.circle").font(.callout)
             if m.axGranted && !m.monitorRunning {
                 HStack {
                     Text(L.t("perm.restart")).font(.caption)
