@@ -6,7 +6,7 @@
 
 Pincez avec deux doigts sur le trackpad pour agrandir ou réduire le texte, comme dans un navigateur. Contrairement à `⌘ +` / `⌘ -`, la fenêtre garde sa taille.
 
-- Fonctionne avec **Terminal**, **iTerm2**, **Ghostty**, **Warp**, **kitty**, **Alacritty**, **WezTerm**, **Hyper** et **Tabby**
+- Testé avec **Terminal**, **iTerm2**, **Ghostty**, **Warp**, **kitty** et **WezTerm** (devrait aussi marcher avec Alacritty, Hyper et Tabby, pas encore testés)
 - Vitesse réglable séparément pour agrandir et pour réduire
 - Réglage depuis une **icône dans la barre des menus** ou avec des **commandes Claude Code** (`/pluslent -`, `/plusrapide +`…)
 - Disponible en français, anglais, espagnol, italien, allemand, portugais, chinois et japonais (suit la langue du Mac)

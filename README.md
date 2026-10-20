@@ -6,7 +6,7 @@
 
 Pinch with two fingers on your trackpad to make the text bigger or smaller, just like in a browser. Unlike `⌘ +` / `⌘ -`, the window keeps its size.
 
-- Works with **Terminal**, **iTerm2**, **Ghostty**, **Warp**, **kitty**, **Alacritty**, **WezTerm**, **Hyper** and **Tabby**
+- Tested with **Terminal**, **iTerm2**, **Ghostty**, **Warp**, **kitty** and **WezTerm** (should also work with Alacritty, Hyper and Tabby — not tested yet)
 - Separate speeds for zooming in and zooming out
 - Adjust the speed from a **menu bar icon** or with **Claude Code commands** (`/slower -`, `/faster +`…)
 - Available in English, French, Spanish, Italian, German, Portuguese, Chinese and Japanese (follows your Mac's language)
