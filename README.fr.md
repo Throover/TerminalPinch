@@ -1,3 +1,5 @@
+<img src="docs/icon.png" width="128" alt="TerminalPinch icon">
+
 # TerminalPinch
 
 **Pincez pour zoomer dans le terminal de votre Mac : changez la taille du texte avec deux doigts sur le trackpad, sans redimensionner la fenêtre.**
