@@ -91,8 +91,11 @@ Only the Xcode Command Line Tools are needed (`xcode-select --install`).
 
 TerminalPinch is free. If it's useful to you, you can support it:
 
-<!-- DONATION_LINKS -->
-*Donation links coming soon.*
+[![Support on Ko-fi](https://img.shields.io/badge/Ko--fi-Buy%20me%20a%20coffee-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/throover)
+[![Support on Liberapay](https://img.shields.io/badge/Liberapay-Donate-F6C915?logo=liberapay&logoColor=black)](https://liberapay.com/Throover)
+
+- **Ko-fi** — one-time or monthly
+- **Liberapay** — recurring, run by a non-profit
 
 ## License
 

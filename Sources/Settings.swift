@@ -3,7 +3,7 @@ import Foundation
 enum Settings {
     static let d = UserDefaults.standard
     static let changedNotification = Notification.Name("app.terminalpinch.settingsChanged")
-    static let donationURL = ""   // à remplir quand le compte de dons existe
+    static let donationURL = "https://ko-fi.com/throover"
 
     // Quantité de pincement pour 1 point de police : plus grand = plus lent.
     static let minStep = 0.02, maxStep = 1.0

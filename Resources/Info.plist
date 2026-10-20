@@ -1,20 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0"><dict>
-<key>CFBundleIdentifier</key><string>app.terminalpinch</string>
-<key>CFBundleName</key><string>TerminalPinch</string>
-<key>CFBundleDisplayName</key><string>TerminalPinch</string>
-<key>CFBundleExecutable</key><string>TerminalPinch</string>
-<key>CFBundleIconFile</key><string>AppIcon</string>
-<key>CFBundlePackageType</key><string>APPL</string>
-<key>CFBundleShortVersionString</key><string>1.0.0</string>
-<key>CFBundleVersion</key><string>1</string>
-<key>CFBundleDevelopmentRegion</key><string>en</string>
-<key>CFBundleLocalizations</key><array>
-<string>en</string><string>fr</string><string>es</string><string>it</string><string>de</string><string>pt</string><string>zh-Hans</string><string>ja</string>
-</array>
-<key>LSMinimumSystemVersion</key><string>13.0</string>
-<key>LSUIElement</key><true/>
-<key>NSHumanReadableCopyright</key><string>MIT License</string>
-<key>NSAppleEventsUsageDescription</key><string>TerminalPinch changes the text size in Terminal when you pinch the trackpad.</string>
-</dict></plist>
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>TerminalPinch</string>
+	<key>CFBundleExecutable</key>
+	<string>TerminalPinch</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
+	<key>CFBundleIdentifier</key>
+	<string>app.terminalpinch</string>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>en</string>
+		<string>fr</string>
+		<string>es</string>
+		<string>it</string>
+		<string>de</string>
+		<string>pt</string>
+		<string>zh-Hans</string>
+		<string>ja</string>
+	</array>
+	<key>CFBundleName</key>
+	<string>TerminalPinch</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.1</string>
+	<key>CFBundleVersion</key>
+	<string>2</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>13.0</string>
+	<key>LSUIElement</key>
+	<true/>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>TerminalPinch changes the text size in Terminal when you pinch the trackpad.</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>MIT License</string>
+</dict>
+</plist>

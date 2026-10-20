@@ -84,8 +84,11 @@ Seuls les outils en ligne de commande de Xcode sont nécessaires (`xcode-select 
 
 TerminalPinch est gratuit. S'il vous est utile, vous pouvez le soutenir :
 
-<!-- DONATION_LINKS -->
-*Liens de don bientôt disponibles.*
+[![Soutenir sur Ko-fi](https://img.shields.io/badge/Ko--fi-Offrir%20un%20caf%C3%A9-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/throover)
+[![Soutenir sur Liberapay](https://img.shields.io/badge/Liberapay-Faire%20un%20don-F6C915?logo=liberapay&logoColor=black)](https://liberapay.com/Throover)
+
+- **Ko-fi** : don ponctuel ou mensuel
+- **Liberapay** : don récurrent, géré par une association à but non lucratif
 
 ## Licence
 
