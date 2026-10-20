@@ -18,7 +18,10 @@ swift scripts/make_icon.swift build
 iconutil -c icns build/AppIcon.iconset -o "$APP/Contents/Resources/AppIcon.icns"
 rm -rf build/AppIcon.iconset
 
-codesign --force --deep -s - "$APP"
+# Signature stable si le certificat « TerminalPinch Developer » existe (les autorisations macOS
+# survivent alors aux mises à jour), sinon signature ad hoc.
+IDENTITY=$(security find-identity -p codesigning | awk -F'"' '/TerminalPinch Developer/ {print $2; exit}')
+codesign --force --deep -s "${IDENTITY:--}" "$APP"
 
 # DMG : glisser l'app dans Applications
 mkdir -p build/dmg && cp -R "$APP" build/dmg/ && ln -s /Applications build/dmg/Applications
