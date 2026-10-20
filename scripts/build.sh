@@ -27,4 +27,6 @@ codesign --force --deep -s "${IDENTITY:--}" "$APP"
 mkdir -p build/dmg && cp -R "$APP" build/dmg/ && ln -s /Applications build/dmg/Applications
 hdiutil create -volname TerminalPinch -srcfolder build/dmg -ov -format UDZO "build/TerminalPinch-$VERSION.dmg" >/dev/null
 rm -rf build/dmg
-echo "OK : $APP et build/TerminalPinch-$VERSION.dmg"
+# ZIP au nom fixe, utilisé par install.sh
+ditto -c -k --keepParent "$APP" build/TerminalPinch.zip
+echo "OK : $APP, build/TerminalPinch-$VERSION.dmg et build/TerminalPinch.zip"

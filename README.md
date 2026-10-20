@@ -1,6 +1,8 @@
 # TerminalPinch
 
-**Pinch to zoom in your Mac terminal — without resizing the window.**
+**Pinch to zoom in your Mac terminal — change the font size with two fingers on the trackpad, without resizing the window.**
+
+A tiny free menu bar app for macOS. Works with Terminal, iTerm2, Ghostty, Warp, kitty and WezTerm.
 
 [Français](README.fr.md)
 
@@ -13,6 +15,14 @@ Pinch with two fingers on your trackpad to make the text bigger or smaller, just
 - Free and open source
 
 ## Install
+
+**In one line** (recommended — no Gatekeeper warning):
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/Throover/TerminalPinch/main/install.sh | sh
+```
+
+**Or manually:**
 
 1. Download `TerminalPinch-x.y.z.dmg` from the [latest release](../../releases/latest).
 2. Open it and drag **TerminalPinch** into **Applications**.
@@ -51,6 +61,21 @@ The same works from any shell: `/Applications/TerminalPinch.app/Contents/MacOS/T
 - **Other terminals**: TerminalPinch sends `⌘ =` / `⌘ -` (found on your keyboard layout, so AZERTY and QWERTZ work), then restores the window frame through the Accessibility API.
 
 If a terminal already handles pinch-to-zoom on its own, turn it off in **Settings → Terminals**.
+
+## FAQ
+
+**How do I zoom in the Mac terminal without resizing the window?**
+By default, `⌘ +` in Terminal makes the text bigger *and* the window bigger. TerminalPinch changes only the font size and keeps the window exactly where and how big it was.
+
+**Can I pinch to zoom in iTerm2, Ghostty, Warp, kitty or WezTerm?**
+Yes. TerminalPinch adds pinch-to-zoom to all of them, with the same behavior.
+
+**Does it slow down my Mac or read my keystrokes?**
+No. It only listens to trackpad pinch gestures, uses almost no CPU, and has no network access.
+
+## Uninstall
+
+Quit TerminalPinch from its menu, delete it from Applications, then optionally run `tccutil reset All app.terminalpinch` to remove its permission.
 
 ## Build from source
 

@@ -1,6 +1,8 @@
 # TerminalPinch
 
-**Pincez pour zoomer dans le terminal de votre Mac, sans redimensionner la fenêtre.**
+**Pincez pour zoomer dans le terminal de votre Mac : changez la taille du texte avec deux doigts sur le trackpad, sans redimensionner la fenêtre.**
+
+Une petite app gratuite pour macOS, dans la barre des menus. Compatible Terminal, iTerm2, Ghostty, Warp, kitty et WezTerm.
 
 [English](README.md)
 
@@ -13,6 +15,14 @@ Pincez avec deux doigts sur le trackpad pour agrandir ou réduire le texte, comm
 - Gratuit et open source
 
 ## Installation
+
+**En une ligne** (recommandé, sans avertissement de Gatekeeper) :
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/Throover/TerminalPinch/main/install.sh | sh
+```
+
+**Ou à la main :**
 
 1. Téléchargez `TerminalPinch-x.y.z.dmg` depuis la [dernière version](../../releases/latest).
 2. Ouvrez-le et glissez **TerminalPinch** dans **Applications**.
@@ -44,6 +54,21 @@ Si vous utilisez [Claude Code](https://claude.com/claude-code), la configuration
 | `/plusrapide +`, `/plusrapide -`, `/plusrapide` | pareil, en plus rapide |
 
 Ça marche aussi depuis n'importe quel terminal : `/Applications/TerminalPinch.app/Contents/MacOS/TerminalPinch --adjust slower -`
+
+## FAQ
+
+**Comment zoomer dans le terminal du Mac sans agrandir la fenêtre ?**
+Par défaut, `⌘ +` dans Terminal agrandit le texte *et* la fenêtre. TerminalPinch ne change que la taille du texte et garde la fenêtre exactement à sa place et à sa taille.
+
+**Peut-on pincer pour zoomer dans iTerm2, Ghostty, Warp, kitty ou WezTerm ?**
+Oui. TerminalPinch ajoute le zoom au pincement à tous ces terminaux, avec le même comportement.
+
+**Est-ce que ça ralentit le Mac ou lit ce que je tape ?**
+Non. L'app n'écoute que les pincements du trackpad, consomme quasiment rien et n'a aucun accès au réseau.
+
+## Désinstaller
+
+Quittez TerminalPinch depuis son menu, supprimez-la du dossier Applications, puis si vous voulez lancez `tccutil reset All app.terminalpinch` pour retirer son autorisation.
 
 ## Compiler soi-même
 
