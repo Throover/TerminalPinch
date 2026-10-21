@@ -6,6 +6,8 @@
 
 Une petite app gratuite pour macOS, dans la barre des menus. Compatible Terminal, iTerm2, Ghostty, Warp, kitty et WezTerm.
 
+![Démo de TerminalPinch : pincer pour zoomer dans le terminal, la fenêtre garde sa taille](docs/demo.gif)
+
 [English](README.md)
 
 Pincez avec deux doigts sur le trackpad pour agrandir ou réduire le texte, comme dans un navigateur. Contrairement à `⌘ +` / `⌘ -`, la fenêtre garde sa taille.
@@ -15,6 +17,8 @@ Pincez avec deux doigts sur le trackpad pour agrandir ou réduire le texte, comm
 - Réglage depuis une **icône dans la barre des menus** ou avec des **commandes Claude Code** (`/pluslent -`, `/plusrapide +`…)
 - Disponible en français, anglais, espagnol, italien, allemand, portugais, chinois et japonais (suit la langue du Mac)
 - Gratuit et open source
+
+<p align="center"><img src="docs/menu.png" width="420" alt="Curseurs dans la barre des menus"> <img src="docs/onboarding.png" width="380" alt="Configuration : vitesse du zoom et commandes Claude Code"></p>
 
 ## Installation
 

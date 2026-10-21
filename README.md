@@ -6,6 +6,8 @@
 
 A tiny free menu bar app for macOS. Works with Terminal, iTerm2, Ghostty, Warp, kitty and WezTerm.
 
+![TerminalPinch demo: pinch to zoom in the terminal, the window keeps its size](docs/demo.gif)
+
 [Français](README.fr.md)
 
 Pinch with two fingers on your trackpad to make the text bigger or smaller, just like in a browser. Unlike `⌘ +` / `⌘ -`, the window keeps its size.
@@ -15,6 +17,8 @@ Pinch with two fingers on your trackpad to make the text bigger or smaller, just
 - Adjust the speed from a **menu bar icon** or with **Claude Code commands** (`/slower -`, `/faster +`…)
 - Available in English, French, Spanish, Italian, German, Portuguese, Chinese and Japanese (follows your Mac's language)
 - Free and open source
+
+<p align="center"><img src="docs/menu.png" width="420" alt="Menu bar sliders"> <img src="docs/onboarding.png" width="380" alt="Setup: zoom speed and Claude Code commands"></p>
 
 ## Install
 
